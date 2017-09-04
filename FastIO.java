@@ -6,11 +6,11 @@ public class FastIO extends PrintWriter {
     private StringTokenizer stringTokenizer;
 
     public FastIO() {
-        this(System.in);
+        this(System.in, System.out);
     }
 
-    public FastIO(InputStream inputStream) {
-        super(new BufferedOutputStream(System.out));
+    public FastIO(InputStream inputStream, OutputStream outputStream) {
+        super(new BufferedOutputStream(outputStream));
         bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         stringTokenizer = new StringTokenizer("");
     }
