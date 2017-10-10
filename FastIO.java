@@ -20,7 +20,7 @@ public class FastIO extends PrintWriter {
         while (!stringTokenizer.hasMoreTokens()) {
             try {
                 String line = bufferedReader.readLine();
-                stringTokenizer = new StringTokenizer(line); // str in stringTokenizer don't contain \t\n\r\f
+                stringTokenizer = new StringTokenizer(line); // line isn't contain any of \t\n\r\f
             } catch (IOException e) {
                 e.printStackTrace();
             }
